@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+html, body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+}
+
+* {
+  outline: none;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  background: url("../imgs/wave.svg") center no-repeat rgba(1, 48, 255, 0.336);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1000px;
+  height: 550px;
+  margin: 20px;
+}
+
+.menu {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.time {
+  font-size: 96px;
+  font-weight: 300;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(248, 235, 235);
+  text-shadow: 4px 2px 8px black;
+}
+
+.btn {
+  padding: 15px 20px;
+  background-color: rgb(247, 40, 40);
+  color: rgb(238, 231, 231);
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}
+.btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.game {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 350px;
+}
+
+.puzzle {
+  display: flex;
+  flex-wrap: wrap;
+  width: 308px;
+  height: 308px;
+  margin: 25px;
+  background-color: rgb(240, 227, 227);
+  box-shadow: 0px 0px 10px 10px rgb(126, 124, 124);
+  cursor: pointer;
+}
+
+.piece {
+  border: 1px solid rgb(0, 0, 0);
+  width: 25%;
+  height: 25%;
+  background: url("../imgs/minecraft.png");
+  background-size: 300px 300px;
+}
+.piece_1 {
+  background-position: 0px 0px;
+}
+.piece_2 {
+  background-position: -75px 0px;
+}
+.piece_3 {
+  background-position: -150px 0px;
+}
+.piece_4 {
+  background-position: -225px 0px;
+}
+.piece_5 {
+  background-position: 0px -75px;
+}
+.piece_6 {
+  background-position: -75px -75px;
+}
+.piece_7 {
+  background-position: -150px -75px;
+}
+.piece_8 {
+  background-position: -225px -75px;
+}
+.piece_9 {
+  background-position: 0px -150px;
+}
+.piece_10 {
+  background-position: -75px -150px;
+}
+.piece_11 {
+  background-position: -150px -150px;
+}
+.piece_12 {
+  background-position: -225px -150px;
+}
+.piece_13 {
+  background-position: 0px -225px;
+}
+.piece_14 {
+  background-position: -75px -225px;
+}
+.piece_15 {
+  background-position: -150px -225px;
+}
+.piece_16 {
+  background-position: -225px -225px;
+}
+
+.drop {
+  width: 25%;
+  height: 25%;
+  background-size: 300px 300px;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 200px;
+  background-color: rgb(135, 216, 205);
+  box-shadow: inset 0 0 100px 30px rgba(127, 62, 247, 0.336);
+  margin: -280px 0 0 -300px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.check {
+  background-color: rgb(11, 173, 38);
+}
+
+.active {
+  background-color: rgba(0, 255, 255, 0.459);
+}
+
+.hover {
+  box-shadow: inset 0px 0px 20px 10px rgba(109, 0, 252, 0.534);
+}/*# sourceMappingURL=style.css.map */
